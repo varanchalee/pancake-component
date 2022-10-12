@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --font-lexend-deca:  'Lexend Deca', sans-serif;
+    --font-big-shoulders: 'Big Shoulders Display', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+main {
+    margin: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+section {
+    padding-inline: 5em;
+    padding-block-start: 5em;
+    padding-block-end: 5em;    
+}
+
+h1 {
+    font-family: var(--font-big-shoulders);
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: var(--font-lexend-deca);
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-block-end: 5em;
+}
+
+.card-1 {
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    border-radius: 2em;
+    max-width: 10em;
+    padding: 1em;
+    text-align: center;
+    font-family: var(--font-lexend-deca);
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-1-button {
+    border: .25em solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.card-1-button:hover {
+    border: .25em solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.card-2-button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+.card-2-button:hover {
+    border: solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.card-3-button {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+.card-3-button:hover {
+    border: solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
